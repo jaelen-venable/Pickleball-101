@@ -4,7 +4,7 @@
 
 ### I will be building a Full Stack App about the game of PickleBall (Project 2)
 
-[Github](https://github.com/jaelen-venable/Pickleball-101)
+[Github]
 [Trello](https://trello.com/b/INleA1LF/pickleball-project)
 [Link](https://app.diagrams.net/#Hjaelen-venable%2FPickleball-101%2Fmain%2FUntitled%20Diagram.drawio)
 
