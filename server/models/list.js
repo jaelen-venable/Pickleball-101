@@ -11,5 +11,5 @@ const listSchema = mongoose.Schema({
     subjects:[String]
 });
 
-const list = mongoose.mode1('list', listSchema);
+const list = mongoose.model('list', listSchema);
 export default list;
