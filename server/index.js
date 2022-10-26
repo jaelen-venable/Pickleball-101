@@ -2,9 +2,13 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors'
+import listRoutes from './routes/list.js';
+
+
 
 const app = express();
 
+app.use('/list', listRoutes);
 app.use(bodyParser.json({limit: "20mb", extended:true}))
 app.use(bodyParser.urlencoded({limit: "20mb", extended:true}))
 
