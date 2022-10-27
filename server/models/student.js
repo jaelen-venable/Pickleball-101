@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import { getStudents } from '../controllers/student';
 
-const listSchema = mongoose.Schema({
+const studentSchema = mongoose.Schema({
     registrationNumber: Number,
     name: String,
     grade: String,
@@ -11,5 +12,5 @@ const listSchema = mongoose.Schema({
     subjects:[String]
 });
 
-const list = mongoose.model('list', listSchema);
-export default list;
+const student = mongoose.model('student', studentSchema);
+export default student;
