@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
-import list from './components/showlist/showlist';
+import list from './components/showlist/showlist.';
 import './App.css';
-import { mergeClasses } from '@material-ui/styles';
+import { mergeClasses } from '@material-ui/styles.';
 import Grid from '@material-ui/core';
 import { Grow } from '@mui/material';
 import Create from './components/createList.js'
