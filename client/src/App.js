@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
-import list from './components/showlist/showlist.';
 import './App.css';
-import { mergeClasses } from '@material-ui/styles.';
-import Grid from '@material-ui/core';
-import { Grow } from '@mui/material';
-import Create from './components/createList.js'
+import { classes } from '@material-ui/styles';
+import useStyles from './styles';
+
+
 
 function App() {
+  const classes = useStyles();
   return (
     <div className="App">
       <Container maxWidth="1g">
@@ -16,7 +15,7 @@ function App() {
         </AppBar>
       </Container>
 
-    <Grow in>
+    <Grow in> 
       <Container>
         <Grid container justify="space-between" alignItems='strect'>
           <Grid item xs={12} sm={7}>
@@ -26,7 +25,7 @@ function App() {
       </Grid>
       <Grid item xs={12} sm={4}>
       <AppBar className={classes.AppBar} position="static" color="inherit">
-        <Create />
+        
       </AppBar>
 
       </Grid>
@@ -34,11 +33,14 @@ function App() {
       </Grid>
 
     </Container>
+    </Grow>
 
 
-
-    </div>
+</div>
+  
+  
   );
 }
+
 
 export default App;
