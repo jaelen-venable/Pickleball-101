@@ -20,8 +20,10 @@
   "homepage": "https://github.com/jaelen-venable/Pickleball-101#readme",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "date-fns": "^2.29.3",
     "express": "^4.18.2",
+    "mongoose": "^6.7.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
