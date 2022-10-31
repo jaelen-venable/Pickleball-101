@@ -6,8 +6,7 @@
 
 [Github](https://github.com/jaelen-venable/Pickleball-101)
 [Trello](https://trello.com/b/INleA1LF/pickleball-project)
-[diagram](https://app.diagrams.net/#Hjaelen-venable%2FPickleball-101%2Fmain%2FUntitled%20Diagram.drawio)
-
+[Pickleball](https://www.domainlocalhost3000.com/)
 
 ## Frontend
 * For the frontend, HTML, CSS, React and Node JS would be used to display and design the interface.
