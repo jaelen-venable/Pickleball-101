@@ -2,13 +2,19 @@ import {Container, AppBar, Typography, Grow, Grid} from '@material-ui/core';
 import Student from './components/showStudent/showStudent.js';
 import Create from './components/createStudent/createStudent.js';
 import './App.css';
+import useStyles from './styles';
+import React from 'react';
+
 
 function App() {
+  const classes = useStyles();
+
+  
   return (
     <div className="App">
       <Container maxWidth="1g">
         <AppBar className={classes.AppBar} position="static" color="inherit">
-          <Typography className={classes.heading} variant="h2" align="center">Name Email Show</Typography>
+          <Typography className={classes.heading} variant="h2" align="center">Pickleball 101</Typography>
         </AppBar>
 
         <Grow in>

@@ -1,3 +1,5 @@
+import student from '../models/student.js';
+
 export const getStudents = async (req, res)=> {
     try {
         const allStudents = await student.find();
