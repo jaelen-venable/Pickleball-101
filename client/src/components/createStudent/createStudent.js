@@ -2,6 +2,7 @@ import  React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+import axios from 'axios';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +24,12 @@ export default function CreateStudent() {
         fee: 0
 
     });
+    
+    const createStudent = () => {
+        axios.post('http://localhost:5000/student', student).then(() => {
+            window.location.reload(false);
+        })
+    }
     
 
     return (
