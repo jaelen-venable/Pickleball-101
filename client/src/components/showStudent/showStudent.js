@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -6,14 +6,16 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { makeStyles } from '@material-ui/core';
+import { IconButton, makeStyles } from '@material-ui/core';
 import axios from 'axios';
+import { Button } from '@mui/material';
+
 
 
 const useStyles = makeStyles({
     table: {
         minWidth: 650,
-    }
+    },
 });
 
 
@@ -21,10 +23,10 @@ const useStyles = makeStyles({
 export default function showStudent() {
   const classes = useStyles();
 
-  const [studentList, setStudentList] = React.useState([])
+  const [studentList, setStudentList] = useState([])
 
-  React.useEffect(() => {
-    axios.get('http://localhost:5000/students').then((allStudents) => {
+  useEffect(() => {
+    axios.get('http://localhost:5000/student').then((allStudents) => {
       setStudentList(allStudents.data);
     })
   }, [])
@@ -54,6 +56,9 @@ export default function showStudent() {
               <TableCell align="right">{student.regNo}</TableCell>
               <TableCell align="right">{student.location}</TableCell>
               <TableCell align="right">{student.fee}</TableCell>
+              <IconButton aria-label="delete" className={classes.margin}>
+                <Button fontSize="small"/>
+              </IconButton>
             </TableRow>
           ))}
         </TableBody>
