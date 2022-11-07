@@ -20,3 +20,5 @@
 ### Credits
 * Jaelen Venable
 * GA SEIR
+* MERN
+* Heroku
