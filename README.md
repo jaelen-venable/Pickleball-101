@@ -15,7 +15,7 @@
 ## Backend
 * For the backend, MongoDB and Express will be used.
 
-![Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.devgenius.io%2Fhow-to-get-started-with-the-mern-stack-the-easy-way-b9758fe45956&psig=AOvVaw1V7D8Qom_dj7RX8fiH9ycj&ust=1667917558368000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJCPm6GjnPsCFQAAAAAdAAAAABAD)
+![Image](https://miro.medium.com/proxy/0*hU4zJiyVwWcM0L-w.png)
 
 ### Credits
 * Jaelen Venable
